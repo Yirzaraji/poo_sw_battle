@@ -1,7 +1,7 @@
 const card = document.getElementsByClassName("card");
 
 for (const cards of card) {
-  console.log(cards);
+  //console.log(cards);
   cards.addEventListener("click", function () {
     cards.classList.replace("notCliked", "clicked");
 
@@ -9,7 +9,7 @@ for (const cards of card) {
 
     //un peu bugué
     for (const clickeds of clicked) {
-      console.log("test", clickeds);
+      //console.log("test", clickeds);
       clickeds.addEventListener("click", function () {
         clickeds.classList.replace("clicked", "notCliked");
       });
@@ -17,11 +17,12 @@ for (const cards of card) {
 
     if (clicked.length === 2) {
       const notClicked = document.getElementsByClassName("notCliked");
-      //console.log('test',notClicked);
+      console.log("test", notClicked);
 
       for (let i = 0; i <= notClicked.length; i++) {
         const container = document.getElementById("superContain");
         container.removeChild(notClicked[i]);
+        //notClicked[i].hidden = true
       }
 
       let Ashoka = document.getElementById("card01");

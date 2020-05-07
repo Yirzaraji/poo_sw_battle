@@ -40,15 +40,15 @@ for ($i = 1; $i < $param; $i++) {
           <strong>Ashsoka</strong>
             <small></br>Padawan d'Anakin</small>
         </div>
-        <img src="images/sw1.jpg" alt="">      
+        <img src="images/sw1.jpg" alt="">
         <div class="card-body">
             <h4 class="card-title">
               Statistiques
             </h4>
             <p class="card-text">
                 <?php echo 'Name: ' . $Ashsoka->name . '<br>';
-                      echo 'Vie: ' . $Ashsoka->vie . '<br>';
-                      echo 'Degats: ' . $Ashsoka->atak . '<br>'; ?>
+echo 'Vie: ' . $Ashsoka->vie . '<br>';
+echo 'Degats: ' . $Ashsoka->atak . '<br>'; ?>
             </p>
             <div class="btn btn-danger atakButton" id="ashsoka"><strong>Attaquer</strong></div>
         </div>
@@ -65,8 +65,8 @@ for ($i = 1; $i < $param; $i++) {
         </h4>
         <p class="card-text">
         <?php echo 'Name: ' . $Revan->name . '<br>';
-              echo 'Vie: ' . $Revan->vie . '<br>';
-              echo 'Degats: ' . $Revan->atak . '<br>'; ?>
+echo 'Vie: ' . $Revan->vie . '<br>';
+echo 'Degats: ' . $Revan->atak . '<br>'; ?>
             </p>
             <div class="btn btn-danger atakButton" id="revan"><strong>Attaquer</strong></div>
       </div>
@@ -83,23 +83,24 @@ for ($i = 1; $i < $param; $i++) {
             </h4>
             <p class="card-text">
             <?php echo 'Name: ' . $Yoda->name . '<br>';
-                  echo 'Vie: ' . $Yoda->vie . '<br>';
-                  echo 'Degats: ' . $Yoda->atak . '<br>'; ?>
+echo 'Vie: ' . $Yoda->vie . '<br>';
+echo 'Degats: ' . $Yoda->atak . '<br>'; ?>
             </p>
             <div class="btn btn-danger atakButton" id="yoda"><strong>Attaquer</strong></div>
         </div>
     </div>
+
 </div><!-- fin row card -->
 
 
 <div class="row justify-content-center mt-3 mb-3">
   <div class="col-sm-6 col-md-6 col-lg-4 cardBis" id="combatLog">
     <div class="card-header text-center" style="border-bottom: 1px solid #535353;">
-          <strong><h5>LOG DE COMBAT</h5></strong>    
+          <strong><h5>LOG DE COMBAT</h5></strong>
     </div>
       <div class="card-body text-center">
         <div class="card-title" id="fight">
-          
+
         </div>
         <a href=""><p class="card-text btn btn-danger mt-4" style="border-top: 1px solid #535353;">
         <strong> Relancer un combat</strong>
