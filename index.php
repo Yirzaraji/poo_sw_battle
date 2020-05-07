@@ -27,6 +27,7 @@ for ($i = 1; $i < $param; $i++) {
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 
 </head>
@@ -35,7 +36,7 @@ for ($i = 1; $i < $param; $i++) {
 <div class="container-fluid">
   <div class="row text-center justify-content-center mt-4" id="superContain">
 
-    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked mr-3 mb-3" id="card01">
+    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked ml-3 mr-3 mb-3" id="card01">
         <div class="card-header text-center">
           <strong>Ashsoka</strong>
             <small></br>Padawan d'Anakin</small>
@@ -53,7 +54,7 @@ echo 'Degats: ' . $Ashsoka->atak . '<br>'; ?>
             <div class="btn btn-danger atakButton" id="ashsoka"><strong>Attaquer</strong></div>
         </div>
     </div>
-    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked mr-3 mb-3" id="card02">
+    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked ml-3 mr-3 mb-3" id="card02">
       <div class="card-header text-center">
           <strong>Darth Revan</strong>
           <small></br>Jedi Noir</small>
@@ -71,7 +72,7 @@ echo 'Degats: ' . $Revan->atak . '<br>'; ?>
             <div class="btn btn-danger atakButton" id="revan"><strong>Attaquer</strong></div>
       </div>
     </div>
-    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked mr-3 mb-3" id="card03">
+    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked ml-3 mr-3 mb-3" id="card03">
         <div class="card-header text-center">
             <strong>Yoda</strong>
             <small></br>Maître de l'ordre Jedi</small>
