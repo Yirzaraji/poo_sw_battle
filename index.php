@@ -1,29 +1,10 @@
-<?php
-include 'class/Personnage.php';
-
-/* function generateCard($param)
-{
-for ($i = 1; $i < $param; $i++) {
-?>
-
-<div class="col-md-4 mr-4 card notCliked" id="card0<?php echo $i ?>" data-pok="pika">
-<img src="images/sw<?php echo $i ?>.jpg" />
-</div>
-
-<?php
-}
-} */
-?>
-
-
-
-
+<?php include 'class/Personnage.php';?>
 
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Titre de la page</title>
+  <title>Star wars battle</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -33,18 +14,26 @@ for ($i = 1; $i < $param; $i++) {
 </head>
 
 <body>
+<div class="container_fluid">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 text-center mt-3"><img src="images/sw.png" alt="" style="width:40%"></div>
+    <div class="col-md-4"></div>
+  </div>
+</div>
+
 <div class="container-fluid">
   <div class="row text-center justify-content-center mt-4" id="superContain">
 
-    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked ml-3 mr-3 mb-3" id="card01">
+    <div class="col-9 col-sm-4 col-md-3 col-lg-3 card notCliked ml-3 mr-3 mb-3" id="card01">
         <div class="card-header text-center">
           <strong>Ashsoka</strong>
             <small></br>Padawan d'Anakin</small>
         </div>
-        <img src="images/sw1.jpg" alt="">
+        <img src="images/sw9.jpg" alt="">
         <div class="card-body">
             <h4 class="card-title">
-              Statistiques
+              <strong>Statistiques</strong>
             </h4>
             <p class="card-text">
                 <?php echo 'Name: ' . $Ashsoka->name . '<br>';
@@ -54,7 +43,7 @@ echo 'Degats: ' . $Ashsoka->atak . '<br>'; ?>
             <div class="btn btn-danger atakButton" id="ashsoka"><strong>Attaquer</strong></div>
         </div>
     </div>
-    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked ml-3 mr-3 mb-3" id="card02">
+    <div class="col-9 col-sm-4 col-md-3 col-lg-3 card notCliked ml-3 mr-3 mb-3" id="card02">
       <div class="card-header text-center">
           <strong>Darth Revan</strong>
           <small></br>Jedi Noir</small>
@@ -62,7 +51,7 @@ echo 'Degats: ' . $Ashsoka->atak . '<br>'; ?>
         <img src="images/sw2.jpg" alt="">
       <div class="card-body">
         <h4 class="card-title">
-          Statistiques
+          <strong>Statistiques</strong>
         </h4>
         <p class="card-text">
         <?php echo 'Name: ' . $Revan->name . '<br>';
@@ -72,7 +61,7 @@ echo 'Degats: ' . $Revan->atak . '<br>'; ?>
             <div class="btn btn-danger atakButton" id="revan"><strong>Attaquer</strong></div>
       </div>
     </div>
-    <div class="col-sm-4 col-md-3 col-lg-2 card notCliked ml-3 mr-3 mb-3" id="card03">
+    <div class="col-9 col-sm-4 col-md-3 col-lg-3 card notCliked ml-3 mr-3 mb-3" id="card03">
         <div class="card-header text-center">
             <strong>Yoda</strong>
             <small></br>Maître de l'ordre Jedi</small>
@@ -80,7 +69,7 @@ echo 'Degats: ' . $Revan->atak . '<br>'; ?>
         <img src="images/sw3.jpg" alt="">
         <div class="card-body">
             <h4 class="card-title">
-                Statistiques
+                <strong>Statistiques</strong>
             </h4>
             <p class="card-text">
             <?php echo 'Name: ' . $Yoda->name . '<br>';
